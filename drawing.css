@@ -1,0 +1,266 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.name {
+  color: dodgerblue;
+  font-family: "REM", "Sirin Stencil", "Freeman";
+  padding: 5px 10px;
+  text-align: center;
+}
+
+#palette {
+  margin: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+#color {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+#custom{
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+#custom:hover{
+  background-color:darkblue;
+  color:yellow;
+}
+#custom2{
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+#custom2:hover{
+  background-color:rgb(139, 25, 0);
+  color:yellow;
+}
+
+#palette button:hover {
+  transform: scale(1.1);
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+  gap: 2px;
+  width: 100%;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+#grid-container div {
+  width: 100%;
+  padding-top: 100%; /* Makes square cells */
+  background-color: lightgray;
+  border: 1px solid #ddd;
+  transition: background-color 0.3s;
+}
+
+#grid-container div:hover {
+  cursor: pointer;
+}
+img {
+  width: 418px;
+  height: 300px;
+  border-radius: 350px;
+  margin-right: 30px;
+  float: right;
+}
+body {
+  background-image: url(images/b.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: "no repeat";
+  margin-right:5rem;
+  min-height:100vh;
+  min-width:100vw;
+  overflow-x:hidden;
+}
+em {
+  color:dodgerblue;
+  font-family: "Rowdies";
+  font-style: oblique;
+}
+#big {
+  color:crimson;
+  font-family: "Rowdies";
+  border-top-style: outset;
+  border-top-color: crimson;
+  border-left-style: double;
+  border-right-style: double;
+  border-right-color: dodgerblue;
+  border-bottom-style: groove;
+  border-bottom-color: dodgerblue;
+  border-width: 5px;
+  width:fit-content; 
+  width:-webkit-fit-content; 
+  width:-moz-fit-content;
+  padding: 0px 5px;
+  left:10px;
+}
+#name {
+  color:dodgerblue;
+  font-family: "REM", "Sirin Stencil", "Freeman";
+}
+div {
+  font-size: 18px;
+  border-style: outset;
+  border-color:deepskyblue;
+  margin-right: 5px;
+  border:none;
+}
+a:hover {
+  color: snow;
+}
+#in {
+  background-image: url(images/b.jpg);
+  border-top-style:hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  color:purple;
+}
+#in:active {
+  background-color: ivory;
+}
+#label {
+  margin-left: 38%;
+  font-family: "Freeman";
+  color:red;
+}
+body::-webkit-scrollbar {
+  width: 0.3rem;
+}
+body::-webkit-scrollbar-track {
+  background:black;
+}
+body::-webkit-scrollbar-thumb {
+  background: dodgerblue;
+}
+#welcome {
+  position:relative;
+  margin:auto;
+  text-align:center;
+  color:dodgerblue;
+  font-family: "REM";
+}
+#description {
+  position:relative;
+  font-family: "REM";
+  color:red;
+  text-align:center;
+  width:60%;
+  margin:auto;
+}
+.navbar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  border-color: red;
+  background-color: black;
+  overflow-x: hidden;
+}
+.sidebar li:hover{
+transform:scale(1.04);
+}
+*{
+margin:0;
+padding:0;
+}
+.second {
+background-color: black;
+box-shadow: 3px 3px 5px blueviolet;
+}
+.second a{
+height:100%;
+padding: 17px 17px;
+text-decoration: none;
+display:flex;
+align-items:center;
+color:red;
+}
+.second a:hover {
+background-color:darkblue;
+color:aqua;
+}
+.sidebar{
+list-style:none;
+display:flex;
+top:0;
+right:0;
+padding: none;
+text-align: right;
+position:fixed;
+width: 300px;
+height:100%;
+right:-100%;
+z-index:999;
+flex-direction:column;
+align-items:normal;
+justify-content:flex-start;
+background-color:black;
+transition:1s ease-out;
+}
+.sidebar li{
+height:8vh;
+width:100%;
+padding:none;
+margin: 16px;
+}
+.mainbar{
+width: 100px;
+margin-left:auto;
+padding:10px 0px;
+height:0%;
+display:flex;
+text-align: right;
+position:absolute;
+right:0;
+top:0;
+}
+.mainbar li{
+list-style:none;
+}
+.fa-bars{
+padding:6px 22px;
+transform:scale(1.6);
+display:inline-block;
+}
+.menu ul{
+list-style-type: none;
+background-color: black;
+height:12vh;
+position:relative;
+padding:0;
+margin:0;
+overflow: hidden;
+}
+.menu a{
+color:red;
+padding:15px;
+display:inline-block;
+text-align:center;
+text-decoration: none;
+}
+.menu a:hover{
+background-color: darkblue;
+color:aqua;
+}
