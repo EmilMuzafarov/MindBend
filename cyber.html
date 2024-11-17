@@ -1,60 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <script src="https://kit.fontawesome.com/34dc62fa85.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="HTML, CSS" />
-    <title>MindBend - Cyber</title>
-    <link rel="stylesheet" href="index.css" />
-</head>
-<body>
-    <!-- Main navigation -->
+    <meta name="description" content="Encryption and Decryption Demo" />
+    <title>Encryption Demo</title>
+    <link rel="stylesheet" href="cyber.css" />
+  </head>
+  <body>
+    <!-- Navigation Menu -->
     <nav class="menu">
-        <ul>
-            <a href="chess.html"><i class="fa-solid fa-chess-pawn fa-lg"></i> Chess</a>
-            <a href="cyber.html"><i class="fa-solid fa-camera fa-lg"></i> Animation</a>
-            <a href="drawing.html"><i class="fa-solid fa-pencil fa-lg"></i> Drawing</a>
-        </ul>
+      <ul>
+        <a href="chess.html"><i class="fa-solid fa-chess-pawn fa-lg"></i>Chess</a>
+        <a href="animation.html"><i class="fa-solid fa-camera fa-lg"></i>Animation</a>
+        <a href="drawing.html"><i class="fa-solid fa-pencil fa-lg"></i>Drawing</a>
+      </ul>
     </nav>
 
-    <!-- Sidebar navigation -->
     <nav class="second">
-        <ul class="sidebar">
-            <li onclick="hideSideBar(); showBar()">
-                <a href="#"><i class="fa-solid fa-xmark fa-lg"></i></a>
-            </li>
-            <li><a href="index.html"><i class="fa-solid fa-house fa-lg"></i> Home</a></li>
-            <li><a href="cyber.html"><i class="fa-solid fa-globe fa-lg"></i> About</a></li>
-            <li><a href="#contact"><i class="fa-regular fa-envelope fa-xl"></i> Contact</a></li>
-        </ul>
-        <ul class="mainbar">
-            <li onclick="showSideBar(); hideBar()">
-                <a href="#"><i class="fa-solid fa-bars fa-lg"></i></a>
-            </li>
-        </ul>
+      <ul class="sidebar">
+        <li onclick="hideSideBar(); showBar()">
+          <a href="#"><i class="fa-solid fa-xmark fa-lg"></i></a>
+        </li>
+        <li><a href="index.html"><i class="fa-solid fa-house fa-lg"></i>Home</a></li>
+        <li><a href="about.html"><i class="fa-solid fa-globe fa-lg"></i>About</a></li>
+        <li><a href="#contact"><i class="fa-regular fa-envelope fa-xl"></i>Contact</a></li>
+      </ul>
+      <ul class="mainbar">
+        <li onclick="showSideBar(); hideBar()">
+          <a href="#"><i class="fa-solid fa-bars fa-lg"></i></a>
+        </li>
+      </ul>
     </nav>
 
-    <!-- Content Section for Cyber -->
-    <div class="content">
-        <h1><span id="big">MindBend - Cybersecurity</span></h1>
-        <p id="name">Made by <em><a href="https://linkedin.com/in/emil-muzafarov-979a79276" target="_blank" title="My LinkedIn">Emil Muzafarov</a></em></p>
-        <h1 id="welcome">Welcome to Cybersecurity!</h1>
-        <p id="description">Explore the basics of cybersecurity and learn how to protect yourself online. From encryption to firewalls, dive deep into this fascinating field!</p>
-        
-        <!-- Example of adding some educational content or links -->
-        <div>
-            <h2>Getting Started with Cybersecurity</h2>
-            <ul>
-                <li><a href="https://www.cybrary.it" target="_blank">Cybrary - Free Cybersecurity Courses</a></li>
-                <li><a href="https://www.udemy.com" target="_blank">Udemy - Cybersecurity Courses</a></li>
-            </ul>
-        </div>
-
-        <label id="label">Enter a Website</label>
-        <input type="text" id="in" />
-
+    <h1>Encryption and Decryption Demo</h1>
+    <div class="container">
+      <h2>Enter a Message to Encrypt</h2>
+      <textarea id="inputText" placeholder="Enter your message here"></textarea>
+      <div class="button-group">
+        <button onclick="hashMessage()">Hash (SHA-256)</button>
+        <button onclick="mockEncrypt('RSA')">Encrypt (RSA)</button>
+        <button onclick="mockEncrypt('ECC')">Encrypt (ECC)</button>
+      </div>
+      <div id="outputText" class="output" placeholder="Your output will appear here"></div>
     </div>
-    <script src="index.js"></script>
-</body>
+
+    <script src="cyber.js"></script>
+  </body>
 </html>
