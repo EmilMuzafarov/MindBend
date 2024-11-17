@@ -32,23 +32,43 @@ function encryptRSA() {
   document.getElementById('outputText').textContent = `Encrypted Message (RSA): ${encrypted}`;
 }
 
-// RSA Decryption
-function decryptRSA() {
-  const encryptedMessage = document.getElementById('inputText').value;
-  const decrypted = rsa.decrypt(encryptedMessage);
-  document.getElementById('outputText').textContent = `Decrypted Message (RSA): ${decrypted}`;
+async function hashMessage() {
+  const inputText = document.getElementById("inputText").value;
+  const encoder = new TextEncoder();
+  const data = encoder.encode(inputText);
+  const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  const hashHex = hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
+  document.getElementById("outputText").textContent = "Hashed (SHA-256): " + hashHex;
 }
 
-// ECC Encryption (simplified)
-function encryptECC() {
-  const message = document.getElementById('inputText').value;
-  const encrypted = ecKeyPair.encrypt(message, 'hex');
-  document.getElementById('outputText').textContent = `Encrypted Message (ECC): ${encrypted}`;
+function mockEncrypt(algorithm) {
+  const inputText = document.getElementById("inputText").value;
+  let encryptedText;
+  if (algorithm === "RSA") {
+    encryptedText = btoa(inputText); // Mock encryption for demo
+    document.getElementById("outputText").textContent = "Encrypted (RSA): " + encryptedText;
+  } else if (algorithm === "ECC") {
+    encryptedText = btoa(inputText.split("").reverse().join("")); // Mock ECC encryption
+    document.getElementById("outputText").textContent = "Encrypted (ECC): " + encryptedText;
+  }
+}
+function showSideBar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.transform = 'translateX(0)';
 }
 
-// ECC Decryption (simplified)
-function decryptECC() {
-  const encryptedMessage = document.getElementById('inputText').value;
-  const decrypted = ecKeyPair.decrypt(encryptedMessage, 'utf8');
-  document.getElementById('outputText').textContent = `Decrypted Message (ECC): ${decrypted}`;
+function hideSideBar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.transform = 'translateX(100%)';
+}
+
+function showBar() {
+    const mainbar = document.querySelector('.mainbar');
+    mainbar.style.display = 'flex';
+}
+
+function hideBar() {
+    const mainbar = document.querySelector('.mainbar');
+    mainbar.style.display = 'none';
 }
