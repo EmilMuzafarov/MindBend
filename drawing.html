@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/34dc62fa85.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing</title>
+    <link rel="stylesheet" href="drawing.css">
+</head>
+<body>
+  </nav>
+  <nav class="second">
+    <ul class="sidebar">
+      <li onclick="hideSideBar(); showBar()">
+        <a href="#"><i class="fa-solid fa-xmark fa-lg"></i></a>
+      </li>
+      <li>
+        <a href="index.html"
+          ><i class="fa-solid fa-house fa-lg"></i>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="about.html"><i class="fa-solid fa-globe fa-lg"></i> About</a>
+      </li>
+      <li>
+        <a href="#contact"
+          ><i class="fa-regular fa-envelope fa-xl"></i>Contact</a
+        >
+      </li>
+    </ul>
+    <ul class="mainbar">
+      <li onclick="showSideBar(); hideBar()">
+        <a href="#"><i class="fa-solid fa-bars fa-lg"></i></a>
+      </li>
+    </ul>
+  </nav>
+  <br />
+    <h1 class="name">Drawing</h1>
+    <div id="palette">
+        <button id="color" onclick="setColor('black')" style="background-color:black;"></button>
+        <button id="color" onclick="setColor('red')" style="background-color:red;"></button>
+        <button id="color" onclick="setColor('green')" style="background-color:green;"></button>
+        <button id="color" onclick="setColor('blue')" style="background-color:blue;"></button>
+        <button id="custom" onclick="askCustomColor()">Custom Color</button>
+        <button id="custom2" onclick="reset()">Clear</button>
+    </div>
+    <div id="grid-container"></div>
+    
+    <script src="drawing.js"></script>
+</body>
+</html>

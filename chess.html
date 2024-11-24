@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/34dc62fa85.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="description" content="..." />
+    <title>Chess</title>
+    <link rel="stylesheet" href="chess.css" />
+  </head>
+  <body>
+    <nav class="menu">
+      <ul>
+        <a href="chess.html"
+          ><i class="fa-solid fa-chess-pawn fa-lg"></i>Chess</a
+        >
+        <a href="cyber.html"
+          ><i class="fa-solid fa-camera fa-lg"></i>Animation</a
+        >
+        <a href="drawing.html"
+          ><i class="fa-solid fa-pencil fa-lg"></i>Drawing</a
+        >
+      </ul>
+      <!-- Corrected line -->
+    </nav>
+    <nav class="second">
+      <ul class="sidebar">
+        <li onclick="hideSideBar(); showBar()">
+          <a href="#"><i class="fa-solid fa-xmark fa-lg"></i></a>
+        </li>
+        <li>
+          <a href="index.html"
+            ><i class="fa-solid fa-house fa-lg"></i>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="about.html"><i class="fa-solid fa-globe fa-lg"></i> About</a>
+        </li>
+        <li>
+          <a href="#contact"
+            ><i class="fa-regular fa-envelope fa-xl"></i>Contact</a
+          >
+        </li>
+      </ul>
+      <ul class="mainbar">
+        <li onclick="showSideBar(); hideBar()">
+          <a href="#"><i class="fa-solid fa-bars fa-lg"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <br />
+    <h1>Chess</h1>
+    <br />
+    <div class="pieces">
+      <div class="container">
+        <div class="card">
+          <div class="front"></div>
+          <div class="back">
+            <p id="title">Pawn</p>
+            <p><br /></p>
+            <p><br /></p>
+            <li>‒ Moves forward by one</li>
+            <p><br /></p>
+            <li>‒ Takes pieces ahead of it diagonally</li>
+            <p><br /></p>
+            <li>‒ Can promote to a knight, bishop, rook, or queen</li>
+            <p><br /></p>
+            <li>‒ Initial quantity: 8</li>
+            <p><br /></p>
+            <p><br /></p>
+            <p>Point Value: 1</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="card">
+          <div class="front"></div>
+          <div class="back">
+            <p id="title">Knight</p>
+            <p><br /></p>
+            <p><br /></p>
+            <li>‒ Moves and takes pieces in an L shape in any direction</li>
+            <p><br /></p>
+            <li>‒ Initial quantity: 2</li>
+            <p><br /></p>
+            <p><br /></p>
+            <p>Point Value: 3</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="card">
+          <div class="front"></div>
+          <div class="back">
+            <p id="title">Bishop</p>
+            <p><br /></p>
+            <p><br /></p>
+            <li>‒ Moves and takes pieces diagonally in any direction</li>
+            <p><br /></p>
+            <li>‒ Initial quantity: 2</li>
+            <p><br /></p>
+            <p><br /></p>
+            <p>Point Value: 3</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="card">
+          <div class="front"></div>
+          <div class="back">
+            <p id="title">Rook</p>
+            <p><br /></p>
+            <p><br /></p>
+            <li>
+              ‒ Moves forward, backwards, left, and right by any number of
+              spaces
+            </li>
+            <p><br /></p>
+            <li>‒ Takes pieces in the same directions</li>
+            <p><br /></p>
+            <li>‒ Initial quantity: 2</li>
+            <p><br /></p>
+            <p><br /></p>
+            <p>Point Value: 5</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="card">
+          <div class="front"></div>
+          <div class="back">
+            <p id="title">King</p>
+            <p><br /></p>
+            <p><br /></p>
+            <li>‒ Moves in all directions by one space</li>
+            <p><br /></p>
+            <li>‒ Takes pieces diagonally</li>
+            <p><br /></p>
+            <li>‒ Initial quantity: 1</li>
+            <p><br /></p>
+            <p><br /></p>
+            <p>No Point Value!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="card">
+          <div class="front"></div>
+          <div class="back">
+            <p id="title">Queen</p>
+            <p><br /></p>
+            <p><br /></p>
+            <li>‒ Moves in all directions by any number of spaces</li>
+            <p><br /></p>
+            <li>‒ Takes pieces diagonally</li>
+            <p><br /></p>
+            <li>‒ Initial quantity: 1</li>
+            <p><br /></p>
+            <p><br /></p>
+            <p>Point Value: 9</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Special Moves:</h2>
+    <h3></h3>
+    <iframe src="https://www.chessonlinefree.com/play-chess-online" width="800px" height="520px"></iframe>
+    <script src="index.js"></script>
+  </body>
+</html>

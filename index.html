@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/34dc62fa85.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="description" content="..." />
+    <title>MindGridf</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&family=Sirin+Stencil&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Freeman&family=REM:ital,wght@0,100..900;1,100..900&family=Sirin+Stencil&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Freeman&family=REM:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Sirin+Stencil&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Freeman&family=Jersey+15&family=REM:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Sirin+Stencil&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Freeman&family=Jersey+15&family=Jersey+25&family=REM:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Sirin+Stencil&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Freeman&family=Jersey+15&family=Jersey+25&family=REM:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Sirin+Stencil&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Freeman&family=Jersey+15&family=Jersey+25&family=Platypi:ital,wght@0,300..800;1,300..800&family=REM:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Sirin+Stencil&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav class="menu">
+      <ul>
+        <a href="chess.html"><i class="fa-solid fa-chess-pawn fa-lg"></i>Chess</a>
+        <a href="cyber.html"><i class="fa-solid fa-globe fa-lg"></i>Cybersecurity</a>
+        <a href="drawing.html"><i class="fa-solid fa-pencil fa-lg"></i>Drawing</a>
+      </ul>
+    </nav>
+    <nav class="second">
+      <ul class="sidebar">
+        <li onclick="hideSideBar(); showBar()">
+          <a href="#"><i class="fa-solid fa-xmark fa-lg"></i>Close</a>
+        </li>
+        <li>
+          <a href="index.html"
+            ><i class="fa-solid fa-house fa-lg"></i>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="cyber.html"><i class="fa-solid fa-globe fa-lg"></i>Cybersecurity</a>
+        </li>
+        <li>
+          <a href="#contact"
+            ><i class="fa-regular fa-envelope fa-xl"></i>Contact</a
+          >
+        </li>
+      </ul>
+      <ul class="mainbar">
+        <li onclick="showSideBar(); hideBar()">
+          <a href="#"><i class="fa-solid fa-bars fa-lg"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <br />
+    <h1>
+      <span id="big">MindBend</i></span>
+    </h1>
+    <br />
+    <p id="name">
+      Made by
+      <em
+        ><a
+          href="https://linkedin.com/in/emil-muzafarov-979a79276"
+          target="_blank"
+          title="My LinkedIn"
+          >Emil Muzafarov</a
+        ></em
+      >
+    </p>
+    <h1 id="welcome">Welcome!</h1>
+    <br />
+    <p id="description">
+      MindBend is an educational platform for users to experiment with unique features and gain new knowledge in chess, cybersecurity, and art. Go ahead! Explore for yourself and have fun!
+    </p>
+    <script src="index.js"></script>
+  </body>
+</html>
