@@ -3,106 +3,106 @@ body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    overflow-x: hidden;
-    min-height: 100vh;
-    margin-right: 5rem;
+    background-repeat: "no repeat";
+    margin-right:5rem;
+    min-height:100vh;
+    min-width:100vw;
+    overflow-x:hidden;
 }
-
-.menu ul {
-    list-style-type: none;
-    background-color: black;
-    height: 12vh;
-    margin: 0;
-    padding: 0;
+div {
+    border:none;
 }
-
-.menu a {
-    color: red;
-    padding: 15px;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-}
-
-.menu a:hover {
-    background-color: darkblue;
-    color: aqua;
-}
-
-.second {
-    background-color: black;
-    box-shadow: 3px 3px 5px blueviolet;
-}
-
-.second a {
-    height: 100%;
-    padding: 17px;
-    color: red;
-}
-
-.second a:hover {
-    background-color: darkblue;
-    color: aqua;
-}
-
-.sidebar {
-    list-style: none;
-    display: flex;
-    top: 0;
-    right: 0;
-    padding: 0;
+.navbar {
     position: fixed;
-    width: 300px;
-    height: 100%;
-    z-index: 999;
-    flex-direction: column;
-    background-color: black;
-    transition: 1s ease-out;
-    transform: translateX(100%);
-}
-
-.sidebar li {
-    height: 8vh;
-    margin: 16px;
-}
-
-.mainbar {
-    width: 100px;
-    margin-left: auto;
-    position: absolute;
     right: 0;
     top: 0;
+    border-color: red;
+    background-color: black;
+    overflow-x: hidden;
 }
-
-.mainbar li {
-    list-style: none;
+.sidebar li:hover{
+  transform:scale(1.04);
 }
-
-.fa-bars {
-    padding: 6px 22px;
-    transform: scale(1.6);
+*{
+  margin:0;
+  padding:0;
 }
-
-#big {
-    color: crimson;
-    font-family: "Rowdies";
-    border: 5px solid crimson;
-    padding: 0 5px;
+.second {
+  background-color: black;
+  box-shadow: 3px 3px 5px blueviolet;
 }
-
-#name, #welcome, #description {
-    font-family: "REM", "Sirin Stencil", "Freeman";
-    text-align: center;
-    color: dodgerblue;
+.second a{
+  height:100%;
+  padding: 20px;
+  text-decoration: none;
+  display:flex;
+  align-items:center;
+  color:red;
 }
-
-#description {
-    width: 60%;
-    margin: auto;
+.second a:hover {
+  background-color:darkblue;
+  color:aqua;
 }
-
-#in {
-    background-color: ivory;
-    border: none;
-    color: purple;
+.sidebar{
+  list-style:none;
+  display:flex;
+  top:0;
+  right:0;
+  padding: none;
+  text-align: right;
+  position:fixed;
+  width: 300px;
+  height:100%;
+  right:-100%;
+  z-index:999;
+  flex-direction:column;
+  align-items:normal;
+  justify-content:flex-start;
+  background-color:black;
+  transition:1s ease-out;
+}
+.sidebar li{
+  height:8vh;
+  width:100%;
+  padding:none;
+  margin: 16px;
+}
+.mainbar{
+  width: 100px;
+  margin-left:auto;
+  padding:10px 0px;
+  height:0%;
+  display:flex;
+  text-align: right;
+  position:absolute;
+  right:0;
+  top:0;
+}
+.mainbar li{
+  list-style:none;
+}
+.fa-bars{
+  padding:6px 22px;
+  transform:scale(1.6);
+  display:inline-block;
+}
+.menu ul{
+  list-style-type: none;
+  background-color: black;
+  height:12vh;
+  position:relative;
+  padding:0;
+  margin:0;
+  overflow: hidden;
+}
+.menu a{
+  color:red;
+  padding:15px;
+  display:inline-block;
+  text-align:center;
+  text-decoration: none;
+}
+.menu a:hover{
+  background-color: darkblue;
+  color:aqua;
 }
