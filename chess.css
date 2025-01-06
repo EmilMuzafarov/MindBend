@@ -6,7 +6,7 @@ img {
     float: right;
   }
   body {
-    background-image: url(images/b.jpg);
+    background-color: rgb(6, 39, 39);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -175,19 +175,39 @@ img {
   overflow: hidden;
 }
 .menu a{
+  font-size: 22px;
   color:red;
   padding:15px;
   display:inline-block;
   text-align:center;
   text-decoration: none;
+  font-weight: bold;
+  font-family: "REM";
 }
 .menu a:hover{
   background-color: darkblue;
   color:aqua;
 }
-h1,h2{
-  text-align:center;
-  color:green;
+h2{
+  margin-top: 50px;
+  font-size: 38px;
+}
+h1{
+  font-size: 50px;
+}
+h1, h2, .special li {
+  text-align: center;
+  font-weight: bolder;
+  color: green;
+}
+.special li {
+  list-style-type:disc;
+  font-size: 26px;
+}
+.special{
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 .pieces{
   text-align: center;
@@ -276,5 +296,5 @@ p, li{
 iframe {
   display:block;
   margin:0 auto;
-
+  margin-top: 50px;
 }
